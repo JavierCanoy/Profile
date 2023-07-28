@@ -53,6 +53,11 @@ function NavBar() {
                     Project
                   </Link>
                 </li>
+                <li className="pb-6 md:pb-0 text-xl text-white py-2 md:py-0 md:px-6 text-center  border-b-2 md:border-b-0 px-10    border-green-700   md:hover:text-green-500 md:hover:bg-transparent">
+                  <Link href="#data" onClick={() => setNavbar(!navbar)}>
+                    Data
+                  </Link>
+                </li>
                 <li
                   className="my-10 py-2 md:my-0    text-xl text-white md:pt-2 md:pb-2  md:px-6  text-center  border-2    px-10   border-green-500  md:hover:text-green-500 md:hover:bg-transparent
                    rounded-full

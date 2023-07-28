@@ -1,12 +1,21 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Avatar from "@mui/material/Avatar";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div id="about">
       <div className=" lg:h-screen  w-full bg-green-700 ">
-        <div className=" grid grid-cols-12 lg:grid-rows-2 mx-4 py-20  ">
-          <div className=" col-span-12 lg:col-span-6  flex justify-center my-auto  ">
+        <div
+          className=" grid grid-cols-12 lg:grid-rows-2 mx-4 py-20  "
+          data-aos="slide-right"
+        >
+          <div className=" col-span-12 lg:col-span-6  flex justify-center my-auto   ">
             <Avatar
               alt="Javier"
               className=" my-10 border-2 border-white "

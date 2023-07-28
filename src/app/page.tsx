@@ -17,11 +17,11 @@ export default function Main() {
   return (
     <div className="main  w-full">
       <NavBar />
-      {/* 
+
       <Home />
       <About />
       <Contact />
-      <Project /> */}
+      <Project />
 
       <div className=" mx-auto  flex justify-center">
         <div className=" mt-10">

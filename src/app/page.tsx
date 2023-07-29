@@ -52,13 +52,7 @@ export default function Main() {
               {/* Suspense */}
               <Suspense
                 fallback={
-                  <PacmanLoader
-                    color="#281b3b"
-                    loading
-                    margin={2}
-                    size={50}
-                    speedMultiplier={1}
-                  />
+                  <PacmanLoader color="#281b3b" loading margin={2} size={50} />
                 }
               >
                 <Dogs />

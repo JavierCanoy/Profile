@@ -1,4 +1,4 @@
-export async function getdata(endPoint: any) {
+export async function getdata4(endPoint: any) {
   try {
     const res = await fetch(endPoint);
     const data = res.json();
@@ -9,7 +9,7 @@ export async function getdata(endPoint: any) {
       setTimeout(() => {
         resolve(data);
         return resolve;
-      }, 3000);
+      }, 5000);
     });
   } catch (error) {
     console.error(error);

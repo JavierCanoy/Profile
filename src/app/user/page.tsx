@@ -1,7 +1,7 @@
 import React from "react";
 import { getdata } from "../libs/getData";
 
-export default async function Page() {
+export default async function User() {
   const data: any = await getdata(`https://jsonplaceholder.typicode.com/users`);
 
   return (
@@ -9,7 +9,7 @@ export default async function Page() {
       {data.map((data: any) => {
         return (
           <div key={data.id}>
-            <p className=" text-center my-2 ">
+            <p className="  ">
               {data.username} {data.email}
             </p>
           </div>

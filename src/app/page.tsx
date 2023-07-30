@@ -14,6 +14,8 @@ import { SkeletonTheme } from "react-loading-skeleton";
 import { Suspense } from "react";
 import BounceLoader from "react-spinners/BounceLoader";
 import PacmanLoader from "react-spinners/PacmanLoader";
+import { useErrorBoundary } from "react-error-boundary";
+import { ErrorBoundary } from "react-error-boundary";
 
 PacmanLoader;
 
@@ -28,17 +30,21 @@ export default function Main() {
               display image using skeleton !
             </h1>
             {/* SkeletonTheme */}
-            <SkeletonTheme
-              // properties
-              baseColor="#0C6BA3"
-              highlightColor="#012C40"
-              width={300}
-            >
-              {/* Suspense */}
-              <Suspense fallback={<Skeleton className="   my-2  " count={5} />}>
-                <Dogs />
-              </Suspense>
-            </SkeletonTheme>
+            <ErrorBoundary fallback={<p> faiild ! </p>}>
+              <SkeletonTheme
+                // properties
+                baseColor="#0C6BA3"
+                highlightColor="#012C40"
+                width={300}
+              >
+                {/* Suspense */}
+                <Suspense
+                  fallback={<Skeleton className="   my-2  " count={5} />}
+                >
+                  <Dogs />
+                </Suspense>
+              </SkeletonTheme>
+            </ErrorBoundary>
             <h1 className=" my-10 font-bold uppercase pt-20">
               display image using pinner ! !
             </h1>

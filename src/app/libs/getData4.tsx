@@ -26,7 +26,13 @@ export async function getdata4() {
       throw new Error(" failed to get data noy ! ");
     }
     const data = res.json();
-    return data;
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(data);
+        return resolve;
+      }, 2000);
+    });
+    // return data;
   } catch (error) {
     console.log(error);
   }

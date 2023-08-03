@@ -13,7 +13,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { SkeletonTheme } from "react-loading-skeleton";
 import { Suspense } from "react";
 import BounceLoader from "react-spinners/BounceLoader";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import SyncLoader from "react-spinners/SyncLoader";
 import { useErrorBoundary } from "react-error-boundary";
 import { ErrorBoundary } from "react-error-boundary";
 import GetPic from "./pic/page";
@@ -24,16 +24,6 @@ export default function Main() {
       {/* <NavBar /> */}
       <div className="  ">
         <div className=" mt-10 grid grid-cols-2 justify-items-center  ">
-          {/* <SkeletonTheme
-            // properties
-            baseColor="#0C6BA3"
-            highlightColor="#012C40"
-            width={300}
-          >
-            <Suspense fallback={<Skeleton className="   my-2  " count={10} />}>
-              <GetPic />
-            </Suspense>
-          </SkeletonTheme> */}
           <div className=" image-using-skeleton-and-snipper">
             <h1 className=" my-10 font-bold uppercase pt-20">
               display image using skeleton !
@@ -41,12 +31,10 @@ export default function Main() {
             {/* SkeletonTheme */}
             <ErrorBoundary fallback={<p> faiild ! </p>}>
               <SkeletonTheme
-                // properties
                 baseColor="#0C6BA3"
                 highlightColor="#012C40"
                 width={300}
               >
-                {/* Suspense */}
                 <Suspense
                   fallback={<Skeleton className="   my-2  " count={5} />}
                 >
@@ -67,7 +55,7 @@ export default function Main() {
               {/* Suspense */}
               <Suspense
                 fallback={
-                  <PacmanLoader color="#281b3b" loading margin={2} size={50} />
+                  <SyncLoader color="#36d7b7" loading margin={5} size={15} />
                 }
               >
                 <Dogs />

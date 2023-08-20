@@ -25,12 +25,12 @@ export default function About() {
                   Front end developer
                 </h2>
                 <p className="  text-center leading-relaxed  py-5  text-[#012C40] ">
-                  Hi, my name is Habib Anwash. Im a skilled web developer with
-                  expertise in front-end development, as well as back-end
+                  Hi{", "}my name is Habib Anwash. Im a skilled web developer with
+                  expertise in front-end development{", "} as well as back-end
                   programming and database management. I have a good
-                  understanding in React, Node JS and also have been practicing
+                  understanding in React{", "} Node JS and also have been practicing
                   myself with it by building projects. With a commitment to
-                  delivering exceptional results and a collaborative approach, I
+                  delivering exceptional results and a collaborative approach{", "} I
                   am dedicated to creating unique and user-friendly websites
                   that meet the specific needs of my clients.
                 </p>

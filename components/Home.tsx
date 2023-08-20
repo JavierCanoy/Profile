@@ -81,13 +81,13 @@ export default function Home() {
                 </h1>
                 <h2 className=" text-center  font-bold">Front end developer</h2>
                 <p className="  text-center leading-relaxed  py-5">
-                  "As a fledgling front-end developer, my commitment to learning
+                  As a fledgling front-end developer, my commitment to learning
                   is unwavering, and my enthusiasm for growth knows no bounds.
                   Coupled with a positive and adaptable character, I eagerly
                   embrace challenges as opportunities to expand my skill set and
                   contribute meaningfully to the ever-evolving landscape of web
                   development using React, HTML, CSS, Tailwind CSS, and
-                  Node.js."
+                  Node.js.
                 </p>
               </div>
             </div>

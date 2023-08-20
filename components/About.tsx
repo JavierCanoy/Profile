@@ -25,7 +25,7 @@ export default function About() {
                   Front end developer
                 </h2>
                 <p className="  text-center leading-relaxed  py-5  text-[#012C40] ">
-                  Hi, my name is Habib Anwash. I'm a skilled web developer with
+                  Hi, my name is Habib Anwash. Im a skilled web developer with
                   expertise in front-end development, as well as back-end
                   programming and database management. I have a good
                   understanding in React, Node JS and also have been practicing

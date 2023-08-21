@@ -1,6 +1,46 @@
 import React from "react";
+import { useState } from "react";
 
 export default function Contact() {
+const [ fullName , setFullName ] = useState("")  
+const [ email , setEmail ] = useState("")  
+const [ contact , setContact ] = useState("")  
+
+
+
+const inputChanger = (indentifier : any , value : any) => {
+  if( indentifier === "fullName")
+  {
+    setFullName(value)
+  }
+  else  if( indentifier === "email")
+  {
+    setEmail(value)
+  }
+  else if( indentifier === "contact")
+  {
+    setContact(value)
+
+  }
+}
+
+const handlerSubmit =( event : any) => {
+event.preventDefault();
+const data = {
+  fullName : fullName,
+  email : email,
+  contact : contact
+
+}  
+console.log(data , "inputdata ! ");
+setFullName("")
+setEmail("")
+setContact("")
+  }
+ 
+
+
+
   return (
     <div
       id="contact"
@@ -90,7 +130,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <form className="p-6 flex flex-col justify-center">
+            <form onSubmit={handlerSubmit} className="p-6 flex flex-col justify-center">
               <div className="flex flex-col">
                 <label className="hidden">Full Name</label>
                 <input
@@ -98,6 +138,9 @@ export default function Contact() {
                   name="name"
                   id="name"
                   placeholder="Full Name"
+                  onChange={ (event) => {inputChanger("fullName",event.target.value)}}
+                  value={fullName}
+
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                 />
               </div>
@@ -109,6 +152,9 @@ export default function Contact() {
                   name="email"
                   id="email"
                   placeholder="Email"
+                  onChange={ (event) => {inputChanger("email",event.target.value)}}
+                  value={email}
+
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                 />
               </div>
@@ -120,6 +166,9 @@ export default function Contact() {
                   name="tel"
                   id="tel"
                   placeholder="Telephone Number"
+                  onChange={ (event) => {inputChanger("contact",event.target.value)}}
+                  value={contact}
+
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                 />
               </div>

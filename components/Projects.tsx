@@ -13,7 +13,6 @@ export default function Projects() {
           Project coming soon.....
         </h2>
       </div>
-      {/* max-w-sm */}
       <div className="  grid grid-cols-12  justify-items-center gap-5  mx-auto  ">
         <div
           role="status"

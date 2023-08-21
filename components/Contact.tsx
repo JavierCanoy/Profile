@@ -24,6 +24,9 @@ const inputChanger = (indentifier : any , value : any) => {
   }
 }
 
+const emailHandler = (value : any ) => {
+  setEmail(value)
+}
 const handlerSubmit =( event : any) => {
 event.preventDefault();
 const data = {
@@ -32,7 +35,7 @@ const data = {
   contact : contact
 
 }  
-console.log(data , "inputdata ! ");
+console.log(data , "Data input ! ");
 setFullName("")
 setEmail("")
 setContact("")
@@ -132,7 +135,6 @@ setContact("")
 
             <form onSubmit={handlerSubmit} className="p-6 flex flex-col justify-center">
               <div className="flex flex-col">
-                <label className="hidden">Full Name</label>
                 <input
                   type="name"
                   name="name"
@@ -146,13 +148,12 @@ setContact("")
               </div>
 
               <div className="flex flex-col mt-2">
-                <label className="hidden">Email</label>
                 <input
                   type="email"
                   name="email"
                   id="email"
                   placeholder="Email"
-                  onChange={ (event) => {inputChanger("email",event.target.value)}}
+                  onChange={ (event) => {emailHandler(event.target.value)}}
                   value={email}
 
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
@@ -160,7 +161,6 @@ setContact("")
               </div>
 
               <div className="flex flex-col mt-2">
-                <label className="hidden">Number</label>
                 <input
                   type="tel"
                   name="tel"

@@ -60,7 +60,7 @@ function NavBar() {
                     className="  border-2    border-green-700  px-10 py-2  rounded-full"
                     onClick={() => setNavbar(!navbar)}
                   >
-                    Contact
+                    Hire Me
                   </Link>
                 </li>
               </ul>

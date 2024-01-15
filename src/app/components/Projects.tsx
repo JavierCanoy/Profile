@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import animationData from "../src/app/assets/animation_llfbvnad.json";
+import animationData from "../assets/animation_llfbvnad.json";
 
 export default function Projects() {
   return (

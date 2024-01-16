@@ -10,7 +10,7 @@ export default function Home() {
             <div>
               <Image
                 alt="Javier"
-                className=" my-10 border-4 border-green-700 rounded-lg "
+                className=" my-10  rounded-lg shadow-lg   "
                 src="/images/avatar/me.jpg"
                 width={250}
                 height={250}
@@ -19,13 +19,13 @@ export default function Home() {
                 <a
                   href="https://www.facebook.com/javier.canoy.9"
                   type="button"
-                  className="m-1 h-9 w-9 mx-4 rounded-full border-2 uppercase leading-normal border-[#012C40] text-[#012C40] transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  className="m-1 h-9 w-9 mx-4  shadow-lg   py-2 border-1 shadow-blue-500 rounded-full border-2 uppercase leading-normal   focus:outline-none focus:ring-0 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 text-white bg-blue-500 hover:text-blue-500 hover:bg-white"
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="mx-auto h-full w-4"
+                    className="mx-auto h-full w-4  "
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -36,7 +36,7 @@ export default function Home() {
                 <a
                   href="https://mail.google.com/"
                   type="button"
-                  className="m-1 h-9 w-9 mx-4  rounded-full border-2  uppercase leading-normal border-[#012C40] text-[#012C40]transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  className="m-1 h-9 w-9 mx-4  shadow-lg   py-2 border-1 shadow-red-500  rounded-full border-2  uppercase leading-normal border-red-500 text-[#012C40]transition  focus:outline-none focus:ring-0 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 text-white bg-red-500 hover:text-red-500 hover:bg-white"
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
@@ -48,8 +48,8 @@ export default function Home() {
                   >
                     <path
                       d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                     />
                   </svg>
                 </a>
@@ -57,7 +57,7 @@ export default function Home() {
                 <a
                   href="https://github.com/JavierBernadas"
                   type="button"
-                  className="m-1 h-9 w-9 mx-4  rounded-full border-2  uppercase leading-normal border-[#012C40] text-[#012C40] transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                  className="m-1 h-9 w-9 mx-4 shadow-lg   py-2 border-1 shadow-black   rounded-full border-2  uppercase leading-normal border-black   focus:outline-none focus:ring-0 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 text-white bg-black hover:text-black hover:bg-white"
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
@@ -76,7 +76,7 @@ export default function Home() {
           <div className=" px-5 col-span-12 border-4 border-green-600 rounded-lg  mx-4 md:max-w-md md:mx-auto  lg:col-span-6  ">
             <div className=" lg:flex lg:h-full ">
               <div className="lg:my-auto  ">
-                <h1 className=" text-center py-2 font-bold mx-6 border-b-4 border-green-800 ">
+                <h1 className=" text-center py-2 font-bold mx-6 border-b-4 border-green-800  ">
                   Javier B. Canoy
                 </h1>
                 <h2 className=" text-center  font-bold">Front end developer</h2>
@@ -86,8 +86,7 @@ export default function Home() {
                   Coupled with a positive and adaptable character, I eagerly
                   embrace challenges as opportunities to expand my skill set and
                   contribute meaningfully to the ever-evolving landscape of web
-                  development using React, HTML, CSS, Tailwind CSS, and
-                  Node.js.
+                  development using React, HTML, CSS, Tailwind CSS, and Node.js.
                 </p>
               </div>
             </div>

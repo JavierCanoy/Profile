@@ -1,10 +1,11 @@
-
 import React from "react";
 import Image from "next/image";
+import NavBar from "../NavBar";
 
 export default function Home() {
   return (
     <div id="home">
+      <NavBar />
       <div className=" h-auto md:py-24 w-full   ">
         <div className=" grid grid-cols-12 pb-10 lg:pb-0 my-auto lg:grid    lg:pt-32">
           <div className=" flex justify-center col-span-12 lg:col-span-6   pt-20 lg:pt-0 ">

@@ -12,10 +12,10 @@ export default function Page() {
     <div className="main">
       <NavBar />
       <Home />
-      <About />
+      {/* <About />
       <Projects />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

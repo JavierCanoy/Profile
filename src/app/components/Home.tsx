@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
@@ -73,14 +74,34 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className=" px-5 col-span-12 border-4 border-green-600 rounded-lg  mx-4 md:max-w-md md:mx-auto  lg:col-span-6  ">
+
+          <div className="   md:max-w-md md:mx-auto  lg:col-span-3  ">
             <div className=" lg:flex lg:h-full ">
               <div className="lg:my-auto  ">
-                <h1 className=" text-center py-2 font-bold mx-6 border-b-4 border-green-800  ">
-                  Javier B. Canoy
-                </h1>
-                <h2 className=" text-center  font-bold">Front end developer</h2>
-                <p className="  text-center leading-relaxed  py-5">
+                <TypeAnimation
+                  sequence={[
+                    // Same substring at the start will only be typed out once, initially
+                    "Hi im Javier Bernadas Canoy",
+                    2500, // wait 1s before replacing "Mice" with "Hamsters"
+                    "A Front End Developer",
+                    2500,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  // style={{ fontSize: "2em", display: "inline-block" }}
+                  style={{
+                    fontSize: "2em",
+                    display: "inline-block",
+                    color: "green",
+                    fontWeight: "bold",
+                  }}
+                  repeat={Infinity}
+                />
+                <p className="border-b-2 w-36  px-2 font-normal border-green-500 shadow-md p-1  rounded-md shadow-green-500 pb-2 ">
+                  From Philippines
+                </p>
+
+                <p className="  text-center lg:indent-8 lg:text-left  leading-relaxed  py-5">
                   As a fledgling front-end developer, my commitment to learning
                   is unwavering, and my enthusiasm for growth knows no bounds.
                   Coupled with a positive and adaptable character, I eagerly

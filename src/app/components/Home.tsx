@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -75,33 +76,44 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="   md:max-w-md md:mx-auto  lg:col-span-3  ">
+          {/* <div className="   md:max-w-md md:mx-auto  lg:col-span-3  "> */}
+          <div
+            className="
+            flex justify-center col-span-12   md:max-w-md md:mx-auto  lg:col-span-3  
+            "
+          >
             <div className=" lg:flex lg:h-full ">
               <div className="lg:my-auto  ">
-                <TypeAnimation
-                  sequence={[
-                    // Same substring at the start will only be typed out once, initially
-                    "Hi im Javier Bernadas Canoy",
-                    2500, // wait 1s before replacing "Mice" with "Hamsters"
-                    "A Front End Developer",
-                    2500,
-                  ]}
-                  wrapper="span"
-                  speed={50}
-                  // style={{ fontSize: "2em", display: "inline-block" }}
-                  style={{
-                    fontSize: "2em",
-                    display: "inline-block",
-                    color: "green",
-                    fontWeight: "bold",
-                  }}
-                  repeat={Infinity}
-                />
-                <p className="border-b-2 w-36  px-2 font-normal border-green-500 shadow-md p-1  rounded-md shadow-green-500 pb-2 ">
-                  From Philippines
-                </p>
+                <div className=" flex  justify-center lg:justify-start text-center ">
+                  <div className=" lg:w-96">
+                    <TypeAnimation
+                      sequence={[
+                        // Same substring at the start will only be typed out once, initially
+                        "Hi im Javier B. Canoy",
+                        2500, // wait 1s before replacing "Mice" with "Hamsters"
+                        "A Front End Developer",
+                        2500,
+                      ]}
+                      wrapper="span"
+                      speed={50}
+                      style={{
+                        justifyContent: "center",
+                        fontSize: "2em",
+                        display: "inline-block",
+                        color: "green",
+                        fontWeight: "bold",
+                      }}
+                      repeat={Infinity}
+                    />
+                  </div>
+                </div>
+                <div className="flex justify-center lg:justify-start ">
+                  <p className=" border-b-2 w-36  text-center px-2 font-normal border-green-500 shadow-md p-1  rounded-md shadow-green-500 pb-2 ">
+                    From Philippines
+                  </p>
+                </div>
 
-                <p className="  text-center lg:indent-8 lg:text-left  leading-relaxed  py-5">
+                <p className="  text-center lg:indent-8 lg:text-left  leading-relaxed mx-2 md:mx-0 mt-5  py-5">
                   As a fledgling front-end developer, my commitment to learning
                   is unwavering, and my enthusiasm for growth knows no bounds.
                   Coupled with a positive and adaptable character, I eagerly
@@ -114,6 +126,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="bg-neutral-900 text-center text-white">
-      <div className="px-6 py-5 ">
+      <div className="px-6 py-2 ">
         <div className=" flex justify-center gap-5">
           <a
             href="https://www.facebook.com/javier.canoy.9"
@@ -61,7 +61,7 @@ export default function Footer() {
           </a>
         </div>
         <p className=" text-sm md:text-base my-2">
-          Copyright © 2023 Javier Bernadas Canoy Personal Profile Website.
+          Copyright © 2024 Javier Bernadas Canoy Personal Profile Website.
         </p>
       </div>
     </footer>

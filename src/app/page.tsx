@@ -5,16 +5,17 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import React from "react";
+import About from "./components/about/page";
 
 export default function Page() {
   return (
     <div className="main">
-      <NavBar />
+      {/* <NavBar /> */}
       <Home />
-      {/* <About />
-      <Projects />
-      <Contact />
-      <Footer /> */}
+      {/* <About /> */}
+      {/* <Projects /> */}
+      {/* <Contact /> */}
+      <Footer />
     </div>
   );
 }
